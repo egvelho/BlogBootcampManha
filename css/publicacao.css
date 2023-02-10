@@ -1,0 +1,102 @@
+.publi-tags {
+  margin-bottom: 12px;
+}
+
+.publi-tag {
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.publi-cabecalho {
+  color: white;
+  background-color: purple;
+  padding: 16px;
+}
+
+.publi-titulo {
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: 22px;
+}
+
+.publi-descricao {
+  margin: 0;
+}
+
+.publi-social-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.publi-perfil {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.publi-compartilhar {
+  text-transform: uppercase;
+}
+
+.publi-perfil-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.publi-perfil-foto {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.publi-perfil-data {
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.conteudo {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 16px;
+}
+
+.profile-image-container img {
+  border-radius: 50%;
+}
+
+@media (max-width: 960px) {
+  .publi-titulo {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 960px) {  
+  .publi-cabecalho {
+      padding-top: 32px;
+      padding-left: 48px;
+      padding-bottom: 32px;
+      padding-right: 16px;
+  }
+
+  .publi-titulo {
+    font-weight: normal;
+    font-size: 42px;
+  }
+  
+  .publi-cabecalho-conteudo {
+    width: 720px;
+    margin: auto;
+  }
+
+  .conteudo {
+    width: 640px;
+    margin: auto;
+  }
+}

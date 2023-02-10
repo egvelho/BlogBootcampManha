@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>replit</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- app-bar início -->
+  <div class="app-bar">
+    <div class="app-bar-left">
+      <div class="app-bar-logo">
+        <a href="/">
+          <img src="/imagens/logo.svg" class="app-logo">
+        </a>
+      </div>
+      <div class="app-bar-links">
+        <a href="/" class="app-nav-link">Página inicial</a>
+        <a href="/" class="app-nav-link">Ver publicações</a>
+      </div>
+    </div>
+    <div class="app-bar-right">
+      <a href="/" class="app-nav-link">Entrar em contato</a>
+    </div>
+  </div>
+  <!-- app-bar fim -->
+  <!-- corpo-pagina inicio -->
+  <div class="corpo-pagina">
+    <!-- publicacoes inicio -->
+    <div class="publicacoes">
+      <span class="publicacoes-sobretitulo">Conhecer mais</span>
+      <h2 class="publicacoes-titulo">Últimas postagens</h2>
+      <div class="publicacoes-lista">
+        <a class="publicacao-item" href="/publicacoes/map-filter-reduce.html">
+          <div class="publicacao-texto-container">
+            <span class="publicacao-data">Em agosto de 2022</span>
+            <span class="publicacao-titulo">Map, filter e reduce: primeiros passos de programação funcional em
+              JavaScript</span>
+          </div>
+          <div class="publicacao-imagem-container">
+            <img class="publicacao-imagem" src="https://eduardovelho.com/images/hacker.jpg">
+          </div>
+        </a>
+
+        <a class="publicacao-item" href="/publicacoes/projetos-javascript.html">
+          <div class="publicacao-texto-container">
+            <span class="publicacao-data">Em setembro de 2022</span>
+            <span class="publicacao-titulo">Como escolher as tecnologias do seu próximo projeto em JavaScript?</span>
+          </div>
+          <div class="publicacao-imagem-container">
+            <img class="publicacao-imagem" src="https://eduardovelho.com/images/fork.jpg">
+          </div>
+        </a>
+
+        <a class="publicacao-item" href="/publicacoes/rede-de-palavras.html">
+          <div class="publicacao-texto-container">
+            <span class="publicacao-data">Em maio de 2022</span>
+            <span class="publicacao-titulo">Um algoritmo para gerar redes de palavras</span>
+          </div>
+          <div class="publicacao-imagem-container">
+            <img class="publicacao-imagem" src="https://eduardovelho.com/images/rcl.png">
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- publicacoes fim -->
+    <!-- contato início -->
+    <div class="contato">
+      <div class="contato-conteudo">
+        <h2 class="contato-titulo">Entrar em contato</h2>
+        <form class="formulario-contato" method="post"
+          action="https://getform.io/f/5a90a90f-7a66-4e44-8e4a-4c13491a4e63">
+          <div class="formulario-item">
+            <label for="formulario-nome">Nome completo</label>
+            <input type="text" required placeholder="Digite o seu nome" id="formulario-nome" name="formulario-nome"
+              class="entrada-texto" minlength="2" maxlength="32">
+          </div>
+
+          <div class="formulario-item">
+            <label for="formulario-email">Email</label>
+            <input required type="email" placeholder="Digite o seu email" id="formulario-email" name="formulario-email"
+              class="entrada-texto">
+          </div>
+
+          <div class="formulario-item">
+            <span>Você gostou do site?</span>
+            <div class="formulario-item-grupo">
+              <input type="radio" required id="formulario-gostei-sim" name="formulario-gostei" value="sim"
+                class="radio-reset">
+              <label for="formulario-gostei-sim">Sim</label>
+              <input type="radio" required id="formulario-gostei-nao" name="formulario-gostei" value="nao"
+                class="radio-reset">
+              <label for="formulario-gostei-nao">Não</label>
+            </div>
+          </div>
+
+          <div class="formulario-item">
+            <label for="formulario-mensagem">Mensagem</label>
+            <textarea required id="formulario-mensagem" name="formulario-mensagem" placeholder="Digite sua mensagem"
+              class="entrada-caixa-texto entrada-texto" minlength="16" maxlength="256"></textarea>
+          </div>
+
+          <div class="formulario-item">
+            <div class="formulario-item-linha">
+              <input type="checkbox" checked id="formulario-novidades" name="formulario-novidades"
+                class="checkbox-reset">
+              <label for="formulario-novidades">Quero receber as novidades por email</label>
+            </div>
+          </div>
+
+          <div class="formulario-item">
+            <input type="submit" value="Enviar agora" class="formulario-botao-enviar">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- contato fim -->
+  </div>
+  <!-- corpo-pagina fim -->
+</body>
+
+</html>
