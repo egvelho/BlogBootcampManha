@@ -13,6 +13,7 @@ h1 {
   display: flex;
   background-color: white;
   width: 100%;
+  height: 48px;
   top: 0;
   left: 0;
   text-transform: uppercase;
@@ -38,6 +39,10 @@ h1 {
 }
 
 .app-bar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
 }
 
 .app-logo {
@@ -49,6 +54,54 @@ h1 {
   text-decoration: none;
   color: purple;
   font-weight: bold;
+}
+
+.clock {
+  border: 4px dotted #eb4d4b;
+  border-radius: 16px;
+  padding: 6px;
+  background-color: #303952;
+  color: #fff6f5;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#open-drawer-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  border-radius: 16px;
+}
+
+#open-drawer-button:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+#open-drawer-button img {
+  width: 100%;
+}
+
+.drawer {
+  display: none;
+  position: fixed;
+  background-color: white;
+  top: 48px;
+  right: 0;
+  height: 100%;
+  width: 192px;
+  box-shadow: -8px 5px 8px 0px rgba(0,0,0,0.3);
+}
+
+.drawer-open {
+  display: block;
+}
+
+.banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
 }
 
 .contato {
@@ -113,6 +166,10 @@ h1 {
 }
 
 @media (max-width: 960px) {
+  .banner {
+    height: 200px;
+  }
+  
   .app-bar-links {
     display: none;
   }

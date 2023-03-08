@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-.publicacoes {
+.publicacoes, .instagram {
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -61,8 +61,22 @@
   height: 96px;
 }
 
+.instagram-imagem {
+  width: 192px;
+  height: 192px;
+}
+
+.instagram-imagens {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 @media (max-width: 960px) {
-  .publicacoes {
+  .publicacoes, .instagram {
     margin-left: 8px;
     margin-right: 8px;
   }
@@ -77,9 +91,13 @@
 }
 
 @media (min-width: 960px) {
-  .publicacoes {
+  .publicacoes, .instagram {
     width: 800px;
     margin: auto;
     margin-top: 8px;
+  }
+
+  .instagram {
+    width: 592px;
   }
 }

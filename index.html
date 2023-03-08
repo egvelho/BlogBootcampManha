@@ -14,27 +14,41 @@
 
 <body>
   <!-- app-bar início -->
-  <div class="app-bar">
+  <header class="app-bar">
     <div class="app-bar-left">
       <div class="app-bar-logo">
         <a href="/">
           <img src="/imagens/logo.svg" class="app-logo">
         </a>
       </div>
-      <div class="app-bar-links">
+      <nav class="app-bar-links">
         <a href="/" class="app-nav-link">Página inicial</a>
         <a href="/" class="app-nav-link">Ver publicações</a>
-      </div>
+      </nav>
     </div>
     <div class="app-bar-right">
       <a href="/" class="app-nav-link">Entrar em contato</a>
+      <span id="clock" class="clock">00:00:00</span>
+      <button id="open-drawer-button">
+        <img src="/imagens/hamburguer.png">
+      </button>
     </div>
-  </div>
+  </header>
   <!-- app-bar fim -->
+  <!-- banner inicio -->
+  <section id="banner" class="banner">
+
+  </section>
+  <!-- banner fim -->
+  <!-- drawer inicio -->
+  <aside id="drawer" class="drawer">
+    Sou um drawer!
+  </aside>
+  <!-- drawer fim -->
   <!-- corpo-pagina inicio -->
-  <div class="corpo-pagina">
+  <main class="corpo-pagina">
     <!-- publicacoes inicio -->
-    <div class="publicacoes">
+    <section class="publicacoes">
       <span class="publicacoes-sobretitulo">Conhecer mais</span>
       <h2 class="publicacoes-titulo">Últimas postagens</h2>
       <div class="publicacoes-lista">
@@ -69,10 +83,17 @@
           </div>
         </a>
       </div>
-    </div>
+    </section>
     <!-- publicacoes fim -->
+    <!-- instagram inicio -->
+    <section id="instagram" class="instagram">
+      <div class="instagram-imagens">
+
+      </div>
+    </section>
+    <!-- instagram fim -->
     <!-- contato início -->
-    <div class="contato">
+    <section class="contato">
       <div class="contato-conteudo">
         <h2 class="contato-titulo">Entrar em contato</h2>
         <form class="formulario-contato" method="post"
@@ -120,10 +141,15 @@
           </div>
         </form>
       </div>
-    </div>
+    </section>
     <!-- contato fim -->
-  </div>
+  </main>
   <!-- corpo-pagina fim -->
+  <script src="/js/script.js"></script>
+  <script src="/js/drawer.js"></script>
+  <script src="/js/instagram.js"></script>
+  <script src="/js/clock.js"></script>
+  <script src="/js/banner.js"></script>
 </body>
 
 </html>
